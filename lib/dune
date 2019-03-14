@@ -7,4 +7,4 @@
 (rule
  (targets cxx_flags.sexp c_library_flags.sexp)
  (deps    (:discover config/discover.exe))
- (action  (run %{discover} %{ocamlc})))
+ (action  (run %{discover})))

@@ -6,10 +6,10 @@
 #include <caml/fail.h>
 #include <caml/memory.h>
 #include <caml/alloc.h>
-#include <opencv/opencv.hpp>
-#include <opencv/objdetect.hpp>
-#include <opencv/highgui.hpp>
-#include <opencv/imgproc.hpp>
+#include <opencv2/opencv.hpp>
+#include <opencv2/objdetect.hpp>
+#include <opencv2/highgui.hpp>
+#include <opencv2/imgproc.hpp>
 
 extern "C"
 {

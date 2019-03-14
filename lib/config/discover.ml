@@ -15,8 +15,6 @@ let conf =
      | None -> default
      | Some deps -> deps
 in
-List.map (print_endline) conf.libs |> ignore;
-List.map (print_endline) conf.cflags |> ignore;
 (* Insert the actual configuration *)
 C.Flags.write_sexp "cxx_flags.sexp" conf.cflags;
-C.Flags.write_sexp "c_library_flags" conf.libs);
+C.Flags.write_sexp "c_library_flags.sexp" conf.libs);
