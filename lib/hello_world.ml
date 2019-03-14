@@ -1,3 +1,14 @@
-external print_hello: unit -> unit = "caml_print_hello"
+type test = {
+  first: int;
+  second: int;
+  third: int;
+}
 
-let run = print_hello
+
+external try_detect: unit -> unit = "caml_try_detect"
+external bar: int -> int -> int -> test = "caml_bar"
+
+let run () = try_detect ()
+(* let run () =
+  let obj = bar 1 2 3 in
+  print_endline (string_of_int obj.second) *)

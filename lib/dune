@@ -1,6 +1,10 @@
 (library
  (public_name hello_world)
  (cxx_names hello_stubs)
- (cxx_flags (-x c++ --std=c++14 -fPIC -I/usr/local/include/opencv4 -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_stitching))
- (c_library_flags (-lstdc++)))
+ (cxx_flags (:include cxx_flags.sexp) -x c++ --std=c++14 -fPIC)
+ (c_library_flags (:include c_library_flags.sexp) -lstdc++))
 
+(rule
+ (targets cxx_flags.sexp c_library_flags.sexp)
+ (deps    (:discover config/discover.exe))
+ (action  (run %{discover} %{ocamlc})))

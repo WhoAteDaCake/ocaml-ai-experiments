@@ -1,0 +1,18 @@
+EXCLUDE_QUERY_DIR
+B /home/august/.opam/4.06.1/lib/dune/_caml
+B /home/august/.opam/4.06.1/lib/dune/_dune_lang
+B /home/august/.opam/4.06.1/lib/dune/_ocaml_config
+B /home/august/.opam/4.06.1/lib/dune/_result
+B /home/august/.opam/4.06.1/lib/dune/_stdune
+B /home/august/.opam/4.06.1/lib/dune/configurator
+B /home/august/.opam/4.06.1/lib/ocaml
+B ../../_build/default/lib/config/.discover.eobjs/byte
+S /home/august/.opam/4.06.1/lib/dune/_caml
+S /home/august/.opam/4.06.1/lib/dune/_dune_lang
+S /home/august/.opam/4.06.1/lib/dune/_ocaml_config
+S /home/august/.opam/4.06.1/lib/dune/_result
+S /home/august/.opam/4.06.1/lib/dune/_stdune
+S /home/august/.opam/4.06.1/lib/dune/configurator
+S /home/august/.opam/4.06.1/lib/ocaml
+S .
+FLG -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs
